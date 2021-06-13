@@ -11,6 +11,7 @@ const partials = path.join(__dirname, '../templates/partials')
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // Setting up the templating engine. Have to make a views folder in project root.
 app.set('view engine', 'hbs')
@@ -88,22 +89,6 @@ app.get('*', (req, res) => {
 
 
 // Start the server.
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port + '.')
 })
-
-// Get takes two args, first is the route, second is the callback function.
-// app.get('', (req, res) => {
-//     res.send('<h1>Fuck Express!</h1>')
-// })
-
-
-// app.get('/help', (req, res) => {
-//     res.send([{
-//         name: 'Sanyam',
-//         age: 27
-//     }, {
-//         name: 'Shanu',
-//         age: 20
-//     }])
-// }) // Automatically converted to JSONString.
