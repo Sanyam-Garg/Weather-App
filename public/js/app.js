@@ -2,8 +2,6 @@
 // Takes url as the argument, works in async, uses 'then' API.
 // response.json() parses the json data received.
 
-console.log('Client side javascript file is loaded!')
-
 const weatherForm = document.querySelector('form')
 const searchInput = document.querySelector('input') // Matches the first element.
 const messageOne = document.querySelector('#message-1') // # is used to target id.
