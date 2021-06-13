@@ -2,17 +2,6 @@
 // Takes url as the argument, works in async, uses 'then' API.
 // response.json() parses the json data received.
 
-
-// fetch('http://localhost:3000/weather?address=Bathinda').then((response) => {
-//     response.json().then((data) => {
-//         if(data.error){
-//             console.log('An error occurred')
-//         } else{
-//             console.log(data.location)
-//             console.log(data.forecast)
-//         }
-//     })
-// })
 console.log('Client side javascript file is loaded!')
 
 const weatherForm = document.querySelector('form')
